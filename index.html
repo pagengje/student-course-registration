@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Course Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2e9f7; /* lilac background */
+            padding: 20px;
+        }
+
+        .container {
+            width: 420px;
+            margin: 60px auto;
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #6a4c93; /* lilac shade */
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #4a4a4a;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 9px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .gender-group {
+            margin-bottom: 20px;
+        }
+
+        .gender-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .gender-group label {
+            display: inline;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #9d7fd8; /* lilac button */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #7c5fb3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Course Registration</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Registration Number</label>
+        <input type="text" placeholder="Enter registration number" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>Email ID</label>
+        <input type="email" placeholder="Enter email address" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Create password" required>
+
+        <label>Gender</label>
+        <div class="gender-group">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </div>
+
+        <label>Course Name</label>
+        <select required>
+            <option value="">-- Select Course --</option>
+            <option>Computer Science</option>
+            <option>Information Technology</option>
+            <option>Electronics</option>
+            <option>Mechanical</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
